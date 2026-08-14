@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Snake Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game-container">
+
+    <!-- Header -->
+    <header class="game-header">
+
+      <h1>🐍 Snake Game</h1>
+
+      <p class="subtitle">
+        Eat the food • Grow your snake • Beat your high score!
+      </p>
+
+    </header>
+
+
+    <!-- Score Section -->
+    <div class="score-container">
+
+      <div class="score-card">
+        <span>Score</span>
+        <strong id="score">0</strong>
+      </div>
+
+      <div class="score-card">
+        <span>High Score</span>
+        <strong id="highScore">0</strong>
+      </div>
+
+    </div>
+
+
+    <!-- Game Board -->
+    <div class="board-wrapper">
+
+      <canvas
+        id="gameBoard"
+        width="400"
+        height="400"
+        aria-label="Snake game board">
+      </canvas>
+
+      <!-- Game Over Message -->
+      <div
+        id="gameOver"
+        class="game-over hidden">
+
+        <div class="game-over-box">
+
+          <div class="game-over-icon">
+            💀
+          </div>
+
+          <h2>Game Over!</h2>
+
+          <p>
+            Your Score:
+            <strong id="finalScore">0</strong>
+          </p>
+
+          <button
+            id="restartButton"
+            type="button">
+            🔄 Play Again
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Instructions -->
+    <p class="instructions">
+      Use Arrow Keys to control the snake
+    </p>
+
+
+    <!-- Mobile Controls -->
+    <div class="controls">
+
+      <button
+        class="control-btn up"
+        data-direction="up"
+        type="button"
+        aria-label="Move Up">
+        ⬆️
+      </button>
+
+      <div class="middle-controls">
+
+        <button
+          class="control-btn"
+          data-direction="left"
+          type="button"
+          aria-label="Move Left">
+          ⬅️
+        </button>
+
+        <button
+          class="control-btn"
+          data-direction="down"
+          type="button"
+          aria-label="Move Down">
+          ⬇️
+        </button>
+
+        <button
+          class="control-btn"
+          data-direction="right"
+          type="button"
+          aria-label="Move Right">
+          ➡️
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Restart Button -->
+    <button
+      id="newGameButton"
+      class="new-game-btn"
+      type="button">
+      🎮 New Game
+    </button>
+
+
+    <!-- Footer -->
+    <footer>
+
+      <p>
+        🐍 Snake Game | Made with HTML, CSS & JavaScript
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
