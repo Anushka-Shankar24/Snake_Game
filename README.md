@@ -26,7 +26,8 @@ A classic Snake Game built using **HTML, CSS, and JavaScript**.
 
 ### 📸 Project Preview
 
-*Add your game screenshot here.*
+Snake-game.png
+
 
 ### 🎯 Project Purpose
 
